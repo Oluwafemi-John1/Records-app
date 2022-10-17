@@ -1,0 +1,44 @@
+#signinsection {
+    height: 100vh;
+    /* background: orangered; */
+    /* display: grid; */
+    position: relative;
+}
+#signindiv {
+    position: absolute;
+    background: white;
+    top: 20%;
+    right: 25%;
+    /* height: 50vh; */
+    /* box-shadow: 2px red; */
+}
+#imago1 {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    align-items: center;
+    color: orangered;
+}
+
+@media screen and (max-width:475px) {
+    #imago1 {
+        display: none;
+    }
+    #signindiv {
+        left: 5%;
+        right: 5%;
+        /* height: 60vh; */
+        /* border: 2px solid red; */
+        
+    }
+    #signinsection {
+        background-image: url(../images/hero.jpg) !important;
+    }
+    #nava {
+        display: none;
+    }
+}
